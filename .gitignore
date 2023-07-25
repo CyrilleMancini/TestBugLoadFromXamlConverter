@@ -1,0 +1,8 @@
+/CustomerProjet/bin/**
+/CustomerProjet/obj/**
+/MainApplication/bin/**
+/MainApplication/obj/**
+/SharedComponent/obj/**
+/SharedComponent/bin/**
+/.vs/*
+/MainApplication/.vs/*

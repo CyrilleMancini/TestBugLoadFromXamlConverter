@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<control:MainPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomerProjet.CustomerPage"
+               xmlns:control="clr-namespace:SharedComponent;assembly=SharedComponent"
+           ControlTemplate="{StaticResource AppMobileTemplate}" 
+             TitleText="CustomerPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Label From CustomerPage"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</control:MainPage>

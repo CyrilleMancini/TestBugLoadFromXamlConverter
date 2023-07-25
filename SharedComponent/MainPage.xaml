@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:SharedComponent"
+             x:Class="SharedComponent.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <control:SimpleColorConverter x:Key="SimpleConverter"></control:SimpleColorConverter>
+        </ResourceDictionary>
+
+        <ControlTemplate x:Key="AppMobileTemplate" >
+            <ScrollView>
+                <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+                    <Label Text="{TemplateBinding TitleText,StringFormat='Templated {0}'}"></Label>
+                    <Label Text="{TemplateBinding ValueConverted,StringFormat='Raw Value {0}'}"></Label>
+                    <Label Text="{TemplateBinding ValueConverted,StringFormat='Converted Value {0}'}" 
+                           TextColor="{TemplateBinding ValueConverted, Converter={StaticResource SimpleConverter}}"></Label>
+                    <Label Text="Label From Template" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Center" />
+                    <ContentPresenter></ContentPresenter>
+                </VerticalStackLayout>
+            </ScrollView>
+        </ControlTemplate>
+    </ContentPage.Resources>
+</ContentPage>
